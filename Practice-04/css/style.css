@@ -9,6 +9,13 @@
     margin: 0 auto;
 }
 
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: green;
+    padding: 3px;
+}
+
 img {
     vertical-align: middle;
 }
