@@ -52,6 +52,13 @@ img {
     width: 100%;
 }
 
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: green;
+    padding: 3px;
+}
+
 .small_image {
     width: 80%;
     margin: 0 auto;
