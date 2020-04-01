@@ -13,6 +13,13 @@ img {
     vertical-align: middle;
 }
 
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: green;
+    padding: 3px;
+}
+
 .main_image {
     width: 80%;
     margin: 0 auto;
