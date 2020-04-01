@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.main_image {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.main_image img {
+    width: 100%;
+}
+
+.small_image {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_image img {
+    margin-top: 5px;
+    border: 3px solid black;
+    margin-right: 6px;
+    margin-left: -3px;
+}
+.small_image img:last-child {
+    margin-right: -3px;
+}
