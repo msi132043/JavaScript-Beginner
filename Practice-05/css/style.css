@@ -16,7 +16,7 @@ img {
 .main_image {
     width: 80%;
     margin: 0 auto;
-    border: 3px solid black;
+    border: 1px solid black;
     position: relative;
 }
 
@@ -61,10 +61,6 @@ img {
 
 .small_image img {
     margin-top: 5px;
-    border: 3px solid black;
-    margin-right: 6px;
-    margin-left: -3px;
-}
-.small_image img:last-child {
-    margin-right: -3px;
+    border: 1px solid black;
+    width: 25%;
 }
