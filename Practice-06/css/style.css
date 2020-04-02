@@ -1,0 +1,119 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/BadScript-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.crl {
+    clear: both;
+}
+
+full_wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ========================== common css end ========================= */
+
+
+
+:root {
+    --background: #f1f1f1;
+    --background-dark: #434343;
+    --card-background: #fff;
+    --card-background-dark: #444444;
+    --text-color: #191919;
+    --text-color-dark: #fff;
+}
+
+body {
+    background: var(--background);
+}
+
+.card_main {
+    padding: 5px;
+}
+
+button {
+    padding: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+.card_body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background: var(--card-background);
+}
+
+.card h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 10px 15px;
+    color: var(--text-color);
+}
+
+.footer p {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 25px auto;
+    padding: 20px 0;
+    text-align: center;
+    font-family: myFont, sans-serif;
+    border-radius: 10px;
+    font-size: 32px;
+    line-height: 24px;
+    color: var(--text-color);
+    background: var(--card-background);
+}
