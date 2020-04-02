@@ -1,0 +1,74 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/BadScript-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.crl {
+    clear: both;
+}
+
+full_wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ========================== common css end ========================= */
+
+.card_main {
+    text-align: center;
+}
+
+
+button {
+    padding: 0 30px;
+    line-height: 40px;
+    text-align: center;
+    font-family: myFont, sans-serif;
+    font-size: 14px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    background: #f1f1f1;
+    color: green;
+}
+
+.card {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    text-align: center;
+    margin: 0 auto;
+    font-family: myFont, sans-serif;
+    color: green;
+}
+
