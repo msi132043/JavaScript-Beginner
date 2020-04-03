@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript: Dark Mode</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container card_main">
+        <div class="header_section">
+            <div class="logo">
+                <a href="#"><i class="fas fa-grip-horizontal"></i> Skilled We</a>
+            </div>
+            <div class="search">
+                <form>
+                    <input id="search" type="search" placeholder="Search here">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="social_link">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="button" onclick=mode()>
+                <i class="fas fa-adjust"></i>
+            </div>
+        </div>
+        <div class="menu fixd_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog Pase</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <img src="images/slider-image-2.jpg" alt="image-1">
+        </div>
+        <div class="section">
+            <h2>Services</h2>
+        </div>
+        <div class="card_body service">
+            <div class="card">
+                <i class="far fa-edit"></i>
+                <a href="#">
+                    <h3>Resposive Web Design</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, Quia commodi nemo fuga quasi molestiae sint neque culpa temporibus. Iani laboriosam temporibus deserunt quo magnam.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <a href="#">
+                    <h3>Web Devlopment</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minus natus quos error fugit Impedit dicta voluptatum dolorum, optio consequatur tenetur explicabo a sed ducimus.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <a href="#">
+                    <h3>App Development</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet eaque quas autem ipsum! Harum quo corporis, atque eveniet quasi, repellendus vitae quis aut sapiente.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>About Us</h2>
+        </div>
+        <div class="card_body about">
+            <div class="card">
+                <a href="#">
+                    <h3>Mission and Vision</h3>
+                </a>
+                <p><b>Mission</b> ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quam tempore dignissimos rerum velit eveniet nesciunt reprehenderit delectus minima is minima quasi modi et enim.<br><br><b>Vision</b> dolor sit amet, provident quoprequo quo ducimus, quo asperiores accusamus. consectetur adipisicing elit. Illum, reiciendis!</p>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h3>Our Values</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis, itaque ratione. Aut cupiditate hic.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, vero, debitis!<br><br>Lorem ipsum sit amet, consectetur adipisicing elit. A perspiciatis explicabo asperiores praesentium, officia veritatis.</p>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <h3>History</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni necessitatibus voluptates at quibusdam nam dolores veritatis eveniet accusantium officiis numquam, perspiciatis!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus delectus, molestias reprehenderit eum adipisci obcaecati error odit sed iste.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Our Team</h2>
+        </div>
+        <div class="card_body team">
+            <div class="card">
+                <img src="images/team.png" alt="team-1">
+                <a href="#">
+                    <h3>Mr. Farhan Reza</h3>
+                </a>
+                <h4>Head of Department</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore earum porro minima nemo error soluta cum reprehenderit distinctio?</p>
+            </div>
+            <div class="card">
+                <img src="images/team.png" alt="team-2">
+                <a href="#">
+                    <h3>Mr Tauhidul Islam</h3>
+                </a>
+                <h4>Head of Department</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nesciunt culpa reprehenderit neque pariatur? Deserunt iure voluptates aspernatur repellat!</p>
+            </div>
+            <div class="card">
+                <img src="images/team.png" alt="team-3">
+                <a href="#">
+                    <h3>Mr. Riyad Rahman</h3>
+                </a>
+                <h4>Head of Department</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsam reprehenderit quasi animi in blanditiis nesciunt, ducimus dolorem eveniet?</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Blog Page</h2>
+        </div>
+        <div class="card_body blog">
+            <div class="card">
+                <img src="images/post-1.jpg" alt="team-1">
+                <a href="#">
+                    <h3>What's new in Bootstrap-5</h3>
+                </a>
+                <p>Responsive font sizes are now enabled by default. Utility API integration. Fluid rescaling is also applied to the spacing utilities (option can be disabled). <br> <b>Drop</b> .font-size-sm, .font-size-base, .font-size-lg and .font-size-xl utilities <br> <b>New</b> .text-sm, .text-base, .text-lg and .text-xl utilities</p>
+            </div>
+            <div class="card">
+                <img src="images/post-2.jpg" alt="team-2">
+                <a href="#">
+                    <h3>What’s new in HTML-6</h3>
+                </a>
+                <p>Native Modals Support in HTML 6. Freedom to Resize Image. HTML 6 Dedicated Libraries. Annotations for images and videos. Customized Menus in HTML 6. The menu could handle list elements triggered by buttons inside the menu. HTML6 Integrated Camera. Good Microformats. Single-Page Apps without Javascript.</p>
+            </div>
+            <div class="card">
+                <img src="images/post-3.jpg" alt="team-3">
+                <a href="#">
+                    <h3>What's new in ES-2020</h3>
+                </a>
+                <p>Array.prototype,<br> Private Class Variables,<br> Object.fromEntries,<br> Promise.allSettled,<br> BigInt,<br> String.prototype,<br> Nullish Coalescing Operator,<br> Optional Chaining Operator,<br> Dynamic Import.</p>
+            </div>
+        </div>
+        <div class="contact_full">
+            <div class="section">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="card_body contact">
+                <div class="card">
+                    <form>
+                        <input type="text" id="user_name" placeholder="Full Name">
+                        <input type="text" id="email" placeholder="E-mail">
+                        <textarea id="message" placeholder="Message"></textarea>
+                        <button id="send_button" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="section footer">
+                <p> <span>&copy;</span> 2020 Skilled We</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

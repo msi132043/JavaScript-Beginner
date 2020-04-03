@@ -1,0 +1,426 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/BadScript-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.crl {
+    clear: both;
+}
+
+full_wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ========================== common css end ========================= */
+
+
+
+:root {
+    --font-family: myFont, sans-serif;
+    --background: #f1f1f1;
+    --background-dark: #434343;
+    --card-background: #fff;
+    --card-background-dark: #444444;
+    --text-color: #191919;
+    --text-color-dark: #fff;
+}
+
+body {
+    background: var(--background);
+}
+
+.card_main {
+    padding: 5px;
+}
+
+.header_section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.logo a {
+    width: 140px;
+    line-height: 36px;
+    text-align: center;
+    color: tomato;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    background: var(--card-background);
+}
+
+.logo i {
+    font-size: 32px;
+    line-height: 42px;
+    position: relative;
+    top: 3px;
+    color: tomato;
+}
+
+.search {
+    width: 50%;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+.search input {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 45px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--card-background);
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    letter-spacing: 2px;
+}
+
+.search button {
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+.search button i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--card-background);
+    color: var(--text-color);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.search button:hover i {
+    color: tomato;
+}
+
+.button {
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    background: var(--card-background);
+    text-align: center;
+    font-size: 46px;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.slider img {
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}
+
+.card_body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    width: 31.31%;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-family);
+    border-radius: 10px;
+    background: var(--card-background);
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--text-color);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 10px 10px 0;
+    color: var(--text-color);
+}
+
+.social_link ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social_link ul li {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--card-background);
+}
+
+.social_link ul li a {
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    font-family: var(--font-family);
+    font-size: 28px;
+    color: var(--text-color);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.social_link ul li a:hover {
+    color: tomato;
+}
+
+.menu {
+    margin: 25px auto;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.fixd_menu {
+    position: sticky;
+    width: 950px;
+    top: 0;
+    margin: 25px auto;
+    opacity: .85;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    text-align: center;
+    background: var(--card-background);
+}
+
+.menu ul li a {
+    padding: 0 26px;
+    line-height: 60px;
+    font-family: var(--font-family);
+    font-size: 32px;
+    color: var(--text-color);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.menu ul li a:hover {
+    color: tomato;
+}
+
+/*
+.menu ul li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu ul li:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+*/
+
+.section {
+    margin-top: 70px;
+}
+
+.section h2 {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 25px auto;
+    text-align: center;
+    background: var(--card-background);
+    padding: 0 26px;
+    line-height: 60px;
+    font-family: var(--font-family);
+    font-size: 32px;
+    border-radius: 20px;
+    color: var(--text-color);
+}
+
+.card i {
+    margin: 0 auto;
+    font-size: 70px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card:hover h3 {
+    color: tomato;
+}
+
+.team img {
+    width: 40%;
+    margin: 20px;
+}
+
+.blog img {
+    width: 100%;
+    padding: 20px;
+}
+
+.contact_full {
+    background: url(../images/map.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.contact {
+    justify-content: center;
+}
+
+.contact form input {
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--card-background);
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 200px;
+    line-height: 35px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--card-background);
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    resize: none;
+}
+
+.contact form textarea::placeholder {
+    line-height: 45px;
+}
+.contact form button {
+    padding: 0 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--card-background);
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    cursor: pointer;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.contact form button:hover {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.contact .card {
+    width: 40%;
+}
+
+.footer p {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    text-align: center;
+    background: var(--card-background);
+    line-height: 50px;
+    font-family: var(--font-family);
+    font-size: 24px;
+    border-radius: 20px;
+    color: tomato;
+}
+
+.footer p span {
+    font-size: 32px;
+    position: relative;
+    top: 15px;
+}
