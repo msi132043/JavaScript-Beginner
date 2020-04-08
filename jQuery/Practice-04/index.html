@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery : Set : text(); html(); val(); attr('');</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <h1>jQuery is a library of <span>JavaScript</span></h1>
+    <input class="input-1 input-2" type="text" value="Set Content">
+
+    <section class="one">
+        <button>$('#div-1').text('&lt;i&gt;jQuery&lt;/i&gt;')</button>
+        <div id="div-1"></div>
+    </section>
+
+    <section class="two">
+        <button>$('#div-2').html('&lt;i&gt;jQuery&lt;/i&gt;')</button>
+        <div id="div-2"></div>
+    </section>
+
+    <section class="three">
+        <button>$('.input-1').val('jQuery')</button>
+        <input class="input-1" type="text" value="Set Content">
+    </section>
+
+    <section class="four">
+        <button>$('.input-2').attr('type','password')</button>
+        <input class="input-2" type="text" value="Set Content">
+    </section>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
