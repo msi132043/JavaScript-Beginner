@@ -21,9 +21,9 @@ $(document).ready(function(){
     //animate with multiple effects;
     
     $('#animate-1').click(function(){
-        $('.box-one').animate({right: '300px', width: '100px'}, 1500);
-        $('.box-one').animate({right: '-300px'}, 1500);
-        $('.box-one').animate({right: '0px', width: '150px'}, 1500);
+        $('.box-one').animate({right: '300px', width: '100px'}, 2000);
+        $('.box-one').animate({right: '-300px'}, 2000);
+        $('.box-one').animate({right: '0px', width: '150px'}, 2000);
     });
     
     //stop(); using on animate();
